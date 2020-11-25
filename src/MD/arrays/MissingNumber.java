@@ -8,7 +8,7 @@ public class MissingNumber {
         int miss2 = missingNumber2(a, 6);
         System.out.println(miss2);
     }
-
+    //basic
     public static int missingNumber1(int a[], int n){
         int i, total;
         total = (n ) * (n + 1) / 2;
@@ -16,7 +16,7 @@ public class MissingNumber {
             total =total- a[i];
         return total;
     }
-
+    //using xor
     public static int missingNumber2(int a[], int n){
 
         int x1=0; int x2=0;
