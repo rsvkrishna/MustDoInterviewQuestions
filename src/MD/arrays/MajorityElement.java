@@ -10,7 +10,7 @@ public class MajorityElement {
         int a=majorityElement1(arr, n);
         System.out.println(a);
     }
-
+    //basic
     public static int majorityElement1(int a[],int n){
         if(a.length==0)
             return -1;
@@ -33,4 +33,8 @@ public class MajorityElement {
             return a[index];
         return 0;
     }
+    //
+    /*public static int majorityElement2(int a[],int n){
+
+    }*/
 }
