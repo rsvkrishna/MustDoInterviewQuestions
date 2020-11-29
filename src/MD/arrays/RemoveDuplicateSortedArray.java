@@ -20,6 +20,7 @@ public class RemoveDuplicateSortedArray {
             System.out.print(arr[i]+" ");
     }
 
+    //brute force method
     public static int removeDuplicates(int[] arr,int n){
             if(n==0||n==1)
                 return n;
@@ -39,7 +40,7 @@ public class RemoveDuplicateSortedArray {
             }
             return j;
     }
-
+    //optimized method
     public static int removeDuplicates2(int[] arr,int n){
             if(n==0||n==1)
                 return n;
