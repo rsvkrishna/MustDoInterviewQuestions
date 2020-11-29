@@ -1,13 +1,18 @@
 package MD.arrays;
 
+import java.util.Arrays;
+
+//one logic left rotate, one logic right rotate
 public class RotateArray {
     public static void main(String[] args) {
         RotateArray rotate = new RotateArray();
         int arr[] = { 1, 2, 3, 4, 5, 6, 7 };
-        rotate.rotateArray(arr, 2,arr.length);
+        rotate.rotateArray(arr, 5,arr.length);
         rotate.printArray(arr);
-
+        System.out.println("");
         int arr2[] = { 1, 2, 3, 4, 5, 6, 7 };
+        rotate.rotateArray2(arr2,2);
+        printArray(arr2);
     }
 
     //basic
@@ -34,9 +39,14 @@ public class RotateArray {
         //step 1 divide array into two
         int start=0;
         int middle=arr.length-k;
-        int end=arr.length-middle;
+        int end=arr.length-1;
 
-
+        //step 2 reverse the two parts
+        reverse(arr,start,middle-1);
+        //System.out.println(Arrays.toString(arr));
+        reverse(arr,middle,end);
+        //System.out.println(Arrays.toString(arr));
+        reverse(arr,0,end);
 
     }
     public static void reverse(int[] arr,int start,int end){
@@ -49,5 +59,4 @@ public class RotateArray {
             end--;
         }
     }
-
 }
