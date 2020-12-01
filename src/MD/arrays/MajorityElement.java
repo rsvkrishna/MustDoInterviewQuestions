@@ -33,7 +33,7 @@ public class MajorityElement {
             return a[index];
         return 0;
     }
-    //
+    //using binary search
     /*public static int majorityElement2(int a[],int n){
 
     }*/
