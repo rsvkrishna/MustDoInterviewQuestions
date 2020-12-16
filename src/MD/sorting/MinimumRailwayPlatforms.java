@@ -14,7 +14,6 @@ public class MinimumRailwayPlatforms {
 
         //use merge sort or quicksort, for now using arrays.sort
         Arrays.sort(arr);Arrays.sort(dep);
-
         int plat=1;
         int res=1;
         int i=1;int j=0;
@@ -22,7 +21,7 @@ public class MinimumRailwayPlatforms {
             if(arr[i]<=dep[j]){
                 plat++;
                 i++;
-            }else if(arr[i]>dep[j]){
+            }else{
                 plat--;
                 j++;
             }
@@ -30,7 +29,6 @@ public class MinimumRailwayPlatforms {
         }
         return res;
     }
-
     //Brute force
     public static int mimPlat(int arr[],int dep[],int n){
         int plat_needed = 1;
@@ -46,7 +44,6 @@ public class MinimumRailwayPlatforms {
             }
             result = Math.max(result, plat_needed);
         }
-
         return result;
     }
 }
