@@ -29,7 +29,6 @@ public class Sort012s {
                 high--;
                 continue;
             }
-
         }
     }
     public static void swap(int arr[],int i, int j){
@@ -37,5 +36,4 @@ public class Sort012s {
         arr[i]=arr[j];
         arr[j]=temp;
     }
-
 }
