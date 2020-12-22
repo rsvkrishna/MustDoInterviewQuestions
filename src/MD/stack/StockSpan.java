@@ -60,7 +60,7 @@ public class StockSpan {
             }
             s.push(new Pair<>(arr[i],i));
         }
-
+        System.out.println("printing before final logic , this will be NGL "+v);
         for(int i=0;i<v.size();i++)
             v.set(i,(i-v.get(i)));
 

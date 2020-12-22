@@ -6,7 +6,8 @@ import java.util.Stack;
 
 public class NearestGreaterToLeft {
     public static void main(String[] args) {
-        int arr[]={1,3,2,4}; //o/p -1 -1 3 -1
+        //int arr[]={1,3,2,4}; //o/p -1 -1 3 -1
+        int arr[]={100,80,60,70,60,75,85}; //o/p -1 -1 3 -1
         int size=arr.length;
         ArrayList<Integer> trr=findNearestGreaterLeft(arr,size);
         System.out.println(trr);
