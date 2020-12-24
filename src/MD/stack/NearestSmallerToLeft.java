@@ -6,7 +6,7 @@ import java.util.Stack;
 public class NearestSmallerToLeft {
     public static void main(String[] args) {
         //int arr[]={4,5,2,10,8}; //o/p -1 4 -1 2 2
-        int arr[]={6,2,5,4,5,1,6}; //o/p -1 4 -1 2 2
+        int arr[]={6,2,5,4,5,1,6};
         int size=arr.length;
         ArrayList<Integer> trr=findNearestSmallestLeft(arr,size);
         System.out.println(trr);
