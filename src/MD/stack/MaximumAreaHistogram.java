@@ -12,7 +12,11 @@ public class MaximumAreaHistogram {
         int arr[]={6,2,5,4,5,1,6}; //o/p 12
         int size=arr.length;
         System.out.println("arr array"+Arrays.toString(arr));
+        System.out.println("Max area of histogram is "+findMAH(arr,size));
 
+    }
+
+    public static int findMAH(int[] arr,int size){
         ArrayList<Integer> nsr=findNSRIndex(arr,size);
         System.out.println("nsr "+ nsr);
         ArrayList<Integer> nsl=findNSLIndex(arr,size);
@@ -21,7 +25,7 @@ public class MaximumAreaHistogram {
         int area[]=new int[size]; // max value of this is our ans
 
         for(int i=0;i<size;i++)
-           width[i]= (nsr.get(i) - nsl.get(i)-1);
+            width[i]= (nsr.get(i) - nsl.get(i)-1);
 
         System.out.println("Width array"+Arrays.toString(width));
 
@@ -35,10 +39,10 @@ public class MaximumAreaHistogram {
             if(area[i]>=maxArea)
                 maxArea=area[i];
         }
-        System.out.println("Max area of histogram is "+maxArea);
+        return maxArea;
     }
 
-    private static ArrayList<Integer> findNSRIndex(int[] arr, int size) {
+    public static ArrayList<Integer> findNSRIndex(int[] arr, int size) {
         ArrayList<Integer> v=new ArrayList<>();
         Stack<Pair<Integer,Integer>> s=new Stack<>();
         int psedoIndex=arr.length;
@@ -57,7 +61,7 @@ public class MaximumAreaHistogram {
         return v;
     }
 
-    private static ArrayList<Integer> findNSLIndex(int[] arr, int size) {
+    public static ArrayList<Integer> findNSLIndex(int[] arr, int size) {
         ArrayList<Integer> v=new ArrayList<>();
         Stack<Pair<Integer,Integer>> s=new Stack<>();
         int psedoIndex=-1;
