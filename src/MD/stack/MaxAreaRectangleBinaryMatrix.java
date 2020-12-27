@@ -27,7 +27,6 @@ public class MaxAreaRectangleBinaryMatrix {
             }
             max=Math.max(max,MaximumAreaHistogram.findMAH(temp,temp.length));
         }
-
         return max;
     }
 }
