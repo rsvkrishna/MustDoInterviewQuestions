@@ -2,7 +2,7 @@ package MD.stack;
 
 import java.util.Stack;
 
-public class MinStack {
+public class MinStackWithExtraSpace {
     static Stack<Integer> s=new Stack();
     static Stack<Integer> ss=new Stack();
 
