@@ -10,7 +10,7 @@ public class SimpleBinarySearch {
     }
 
     public static int doBinarySearch(int[] arr,int ele){
-        int start=0;int end=end= arr.length-1;int mid=0;
+        int start=0;int end= arr.length-1;int mid=0;
 
         while (start<=end){
             mid=start+(end-start)/2;
