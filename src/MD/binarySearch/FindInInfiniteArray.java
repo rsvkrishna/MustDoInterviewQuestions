@@ -12,7 +12,6 @@ public class FindInInfiniteArray {
             end=2*end;
         }
         System.out.println("index of 20 is at "+doBinarySearchWithPos(arr,ele,start,end));;
-
     }
 
     public static int doBinarySearchWithPos(int[] arr,int ele,int s,int e){
