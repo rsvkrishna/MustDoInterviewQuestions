@@ -1,13 +1,14 @@
 package MD.binarySearch;
 
-public class PeakElement {
+public class MaximumInBitonicArray {
     public static void main(String[] args) {
-        int[] arr={1,2,4,3,5};
-        System.out.println("the index peak element is "+findPeakElement(arr));
+        //int[] arr={1,2,4,3,5};
+        int[] arr={1,3,8,12,4,2};
+        System.out.println("the index of max element in Bitonic array is "+findMaxInBitonic(arr));
     }
 
-    public static int findPeakElement(int[] arr){
-        int start=0;int end=arr.length;int mid=0;
+    public static int findMaxInBitonic(int[] arr){
+        int start=0;int end=arr.length-1;int mid=0;
         int size=arr.length;
         while(start<=end){
             mid=start+(end-start)/2;
@@ -18,8 +19,8 @@ public class PeakElement {
                     start=mid+1;
                 else
                     end=mid-1;
-            } else if(mid==0){
-                if(arr[0] > arr[1])
+            }else if(mid==0){
+                if(arr[0]>arr[1])
                     return 0;
                 else
                     return 1;
@@ -30,6 +31,6 @@ public class PeakElement {
                     return size-2;
             }
         }
-      return -1;
+        return -1;
     }
 }
