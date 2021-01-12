@@ -57,8 +57,4 @@ public class FrequencySort {
         return res;
     }
 
-   public static void mergeArrays(int[] res, int start,int feq,int ele){
-
-
-    }
 }
