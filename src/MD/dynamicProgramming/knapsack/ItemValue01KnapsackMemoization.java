@@ -13,7 +13,10 @@ public class ItemValue01KnapsackMemoization {
         for (int[] a:t) {
             Arrays.fill(a,-1);
         }
-        System.out.println("Max Profit with Memoization"+knapsackUsingMemoization(wt,val,W,n));
+        System.out.println("Max Profit with Memoization "+knapsackUsingMemoization(wt,val,W,n));
+        /*for (int[] a:t) {
+            System.out.println(Arrays.toString(a));
+        }*/
     }
 
     public static int knapsackUsingMemoization(int[] wt,int[] val,int W,int n){
