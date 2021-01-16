@@ -10,6 +10,7 @@ public class SubsetSum {
 
     }
     public static boolean isThereASubset(int[] arr,int sum){
+        int len=arr.length;
         int n=arr.length+1;
         int m=sum+1;
         boolean[][] t=new boolean[n][m];
@@ -36,6 +37,6 @@ public class SubsetSum {
             }
         }
 
-        return t[n-1][sum];
+        return t[len][sum];
     }
 }
