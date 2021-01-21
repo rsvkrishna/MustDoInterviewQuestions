@@ -24,9 +24,9 @@ public class RodCutting {
                     t[i][j]=t[i-1][j];
             }
         }
-        for (int[] b:t) {
+       /* for (int[] b:t) {
             System.out.println(Arrays.toString(b));
-        }
+        }*/
         return t[len.length][N];
     }
 }
