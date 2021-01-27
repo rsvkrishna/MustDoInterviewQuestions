@@ -8,7 +8,6 @@ public class CoinChangeMinNumberOfCoins {
         int N = 7;
         /*int[] S =  {25, 10, 5};
         int N = 30; // o/p : 2 */
-
         System.out.println("Maximum num of ways are "+findMinNumOfCoins(S,N)); // {1,1,1,1},{1,1,2},{2,2},{1,3}
     }
 
