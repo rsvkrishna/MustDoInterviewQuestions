@@ -14,7 +14,7 @@ public class LCSTopDown {
         int n = Y.length;
         t=new int[m+1][n+1];
 
-        System.out.println("Length of LCS - Memoization is "+findLCSTopDown(X,Y,m,n));
+        System.out.println("Length of LCS - TopDown is "+findLCSTopDown(X,Y,m,n));
     }
 
     private static int findLCSTopDown(char[] X,char[] Y,int m,int n){
