@@ -14,11 +14,11 @@ public class ShortestCommonSuperSequence {
 
         String s3=s1.concat(s2);
         System.out.print("the length of ShortestCommonSuperSequence is ");
-        System.out.print(s3.length()-findLCSubstringLength(X,Y,m,n));
+        System.out.print(s3.length()-findLCLength(X,Y,m,n));
 
     }
 
-    private static int findLCSubstringLength(char[] X,char[] Y,int m,int n){
+    private static int findLCLength(char[] X,char[] Y,int m,int n){
         for(int i=0;i<m+1;i++){
             for(int j=0;j<n+1;j++){
                 if(i==0||j==0)
