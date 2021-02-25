@@ -15,7 +15,7 @@ public class LongestPalindromicSubsequence {
         int n = Y.length;
         t=new int[m+1][n+1];
 
-        System.out.println("Length of LCS - TopDown is "+findLongestPalindromicSubsequence(X,Y,m,n));
+        System.out.println("Length of LongestPalindromicSubSequence - TopDown is "+findLongestPalindromicSubsequence(X,Y,m,n));
     }
 
     private static int findLongestPalindromicSubsequence(char[] X,char[] Y,int m,int n){
