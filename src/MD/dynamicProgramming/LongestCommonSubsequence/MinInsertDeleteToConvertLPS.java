@@ -14,7 +14,6 @@ public class MinInsertDeleteToConvertLPS {
         int n = Y.length;
         t=new int[m+1][n+1];
         int len=minInsertDeletToConvertLPS(X,Y,m,n);
-
         System.out.print("Minimum no of insertion or deletion required : ") ;System.out.print(s1.length()-len);
     }
 
@@ -33,7 +32,6 @@ public class MinInsertDeleteToConvertLPS {
                 else
                     t[i][j]=Math.max(t[i-1][j],t[i][j-1]);
         }
-
         return t[m][n];
     }
 }
