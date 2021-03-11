@@ -1,6 +1,6 @@
 package MD.dynamicProgramming.LongestCommonSubsequence;
 
-public class MinInsertDeleteToConvertLPS {
+public class MinInsertDeleteToConvertStringToPalindrome {
     private static int t[][];
     public static void main(String[] args) {
         String s1 = "AGBCBA";
@@ -13,11 +13,12 @@ public class MinInsertDeleteToConvertLPS {
         int m = X.length;
         int n = Y.length;
         t=new int[m+1][n+1];
-        int len=minInsertDeletToConvertLPS(X,Y,m,n);
-        System.out.print("Minimum no of insertion or deletion required : ") ;System.out.print(s1.length()-len);
+        int len=minInsertDeletToConvertToPalimdrome(X,Y,m,n);
+        System.out.print("Minimum no of insertion or deletion required : ");
+        System.out.print(s1.length()-len);
     }
 
-    private static int minInsertDeletToConvertLPS(char[] X,char[] Y,int m,int n){
+    private static int minInsertDeletToConvertToPalimdrome(char[] X,char[] Y,int m,int n){
         for(int i=0;i<m+1;i++){
             for(int j=0;j<n+1;j++){
                 if(i==0||j==0)
