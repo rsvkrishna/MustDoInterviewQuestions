@@ -3,10 +3,10 @@ package MD.dynamicProgramming.MatrixChainMultiplication;
 public class EvalExpTrueRecursive {
     public static void main(String[] args) {
         String s="T|T&F^T";
-        int res=countParanth(s,0,s.length()-1,true);
+        int res= countParanthRecursive(s,0,s.length()-1,true);
         System.out.println("ans is "+res);
     }
-    private static int countParanth(String s,int i,int j,boolean isTrue){
+    private static int countParanthRecursive(String s, int i, int j, boolean isTrue){
         if(i>j)
             return 0;
         if(i==j){
@@ -17,10 +17,10 @@ public class EvalExpTrueRecursive {
         }
         int ans=0;
         for(int k=i+1;k<j;k=k+2){
-            int lT=countParanth(s,i,k-1,true);
-            int lF=countParanth(s,i,k-1,false);
-            int rT=countParanth(s,k+1,j,true);
-            int rF=countParanth(s,k+1,j,false); //all these are temp ans
+            int lT= countParanthRecursive(s,i,k-1,true);
+            int lF= countParanthRecursive(s,i,k-1,false);
+            int rT= countParanthRecursive(s,k+1,j,true);
+            int rF= countParanthRecursive(s,k+1,j,false); //all these are temp ans
 
             if(s.charAt(k)=='&'){
                 if(isTrue)
