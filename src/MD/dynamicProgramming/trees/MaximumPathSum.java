@@ -3,15 +3,15 @@ package MD.dynamicProgramming.trees;
 public class MaximumPathSum {
     static int maxSum;
     public static void main(String[] args) {
-        TreeNode root = new TreeNode(1000);
+        TreeNode root = new TreeNode(10);
         root.left = new TreeNode(10);
         root.left.left = new TreeNode(20);
-        root.left.right = new TreeNode(30);
+        root.left.right = new TreeNode(-30);
 
-        root.right = new TreeNode(500);
-        root.right.left = new TreeNode(2000);
-        root.right.right = new TreeNode(500);
-        root.right.right.left = new TreeNode(2500);
+        root.right = new TreeNode(20);
+        root.right.left = new TreeNode(-10);
+        root.right.right = new TreeNode(5);
+        root.right.right.left = new TreeNode(25);
 
 
         maxSum=Integer.MIN_VALUE;
