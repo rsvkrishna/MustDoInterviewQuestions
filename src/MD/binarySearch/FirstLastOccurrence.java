@@ -18,6 +18,7 @@ public class FirstLastOccurrence {
             }
             else if(arr[mid]>ele)
                 end=mid-1;
+
             else
                 start=mid+1;
 

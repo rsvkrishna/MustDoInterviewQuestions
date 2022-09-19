@@ -2,7 +2,7 @@ package MD.binarySearch;
 
 public class NextAlphabet{
     public static void main(String[] args) {
-        char[] arr={'a','c','f','h'};
+        char[] arr={'a','c','f','d'};
         System.out.println("The next alphabet after c is "+findNextAlphabet(arr,'c'));
         System.out.println("The next alphabet after c is "+findNextAlphabet2(arr,'c'));
 

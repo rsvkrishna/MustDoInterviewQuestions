@@ -2,8 +2,8 @@ package MD.arrays;
 
 public class MissingNumber {
     public static void main(String args[]){
-        int a[] = { 1, 2, 4, 6, 3, 7 ,8 };
-        //int a[] = { 0, 2, 4, 6, 3, 7 ,5 };
+        //int a[] = { 1, 2, 4, 6, 3, 7 ,8 };
+        int a[] = { 0, 2, 4, 6, 3, 7 ,5 };
         int miss = missingNumber1(a, 7);
         System.out.println(miss);
         int miss2 = missingNumber2(a, 7);
