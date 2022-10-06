@@ -9,8 +9,9 @@ public class Output {
         System.out.println(i*4); // i*4 => 5*4 => o/p will be 20*/
 
         String opCode=null;
+        String opCode2="Cancel_code";
 
-        if("CANCEL_CODE".equalsIgnoreCase(opCode))
+        /*if("CANCEL_CODE".equalsIgnoreCase(opCode))
             System.out.println("true");
         else
             System.out.println("false");
@@ -18,7 +19,19 @@ public class Output {
         if(opCode.equalsIgnoreCase("CANCEL_CODE"))
             System.out.println("true");
         else
+            System.out.println("false");*/
+
+        if(!("CANCEL_CODE".equalsIgnoreCase(opCode)))
+            System.out.println("true");
+        else
             System.out.println("false");
+
+        if(!("CANCEL_CODE".equalsIgnoreCase(opCode2)))
+            System.out.println("true");
+        else
+            System.out.println("false");
+
+
 
     }
 }
